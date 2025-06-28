@@ -1,4 +1,4 @@
-# 🧠 AI Agent Library by Dharmik Solanki
+# 🧠 AI Agent Library by puspender
 
 This repository provides a collection of powerful, ready-to-use AI agents designed for real business use, built in **n8n**—an open-source workflow automation tool. These agents automate tasks like email generation, lead scraping, and stock market analysis, helping you save time and boost productivity.
 
@@ -11,36 +11,38 @@ This repository provides a collection of powerful, ready-to-use AI agents design
 - **Pre-built workflows** (`.json` files) for instant import into n8n
 - **Prompt engineering templates** for better AI results
 - **Sticky Notes** for easy copy-paste into your n8n canvas
-- **Step-by-step setup instructions** (see below)
+- **Step-by-step setup instructions** (see each agent's README)
+
+---
+
+## 🗂️ Agent Suite Overview
+
+This repository features four powerful n8n agents: the Email Generator Agent for automated, personalized cold email outreach; the Lead Scraper Agent for extracting targeted leads from platforms like LinkedIn and Twitter into Google Sheets; the Stock Market Insights AI Agent for real-time stock data, news, and analysis; and Lead Scrapper 2, an advanced suite for high-volume lead scraping, enrichment, and research with a conversational interface. Together, these agents streamline business automation, lead generation, and market intelligence.
 
 ---
 
 ## 📋 Available Agents
 
-### 1. ✉️ [Email Generator Agent](./agents/email-generator-agent)
-- **What it does:** Generates cold emails from plain-text prompts, personalizes them, and sends automatically via Gmail.
-- **Use cases:** Sales outreach, follow-ups, marketing campaigns.
-- **Requirements:** Gmail account (for API access).
-- **File:** `Email_Generation_agent.json`
+Each agent now has its own detailed README with setup, usage, and customization instructions:
 
-### 2. 🕵️‍♂️ [Lead Scraper Agent](./agents/lead-scraper-agent)
-- **What it does:** Scrapes targeted leads from search terms and adds them to a Google Sheet.
-- **Use cases:** Lead generation, market research, contact list building.
-- **Requirements:** Google Sheets account (for API access).
-- **File:** `Lead_Scraper_Agent.json`
+### 1. ✉️ [Email Generator Agent](./agents/email-generator-agent/README.md)
+Generates cold emails from plain-text prompts, personalizes them, and sends automatically via Gmail.
 
-### 3. 📈 [Stock Market Insights AI Agent](./agents/Stock-Market-Insights-AI-Agent)
-- **What it does:** Provides real-time stock market insights, news, and analysis from various sources.
-- **Use cases:** Investment research, financial analysis, news aggregation.
-- **Requirements:** May require API keys for certain data sources (see workflow notes).
-- **File:** `Stock_Market_Insights_AI_Agent (1).json`
+### 2. 🕵️‍♂️ [Lead Scraper Agent](./agents/lead-scraper-agent/README.md)
+Scrapes targeted leads from search terms and adds them to a Google Sheet.
+
+### 3. 📈 [Stock Market Insights AI Agent](./agents/Stock-Market-Insights-AI-Agent/README.md)
+Provides real-time stock market insights, news, and analysis from various sources.
+
+### 4. 🧩 [Lead Scrapper 2](./agents/Lead-scrapper-2/README.md)
+Advanced suite for high-volume lead scraping, enrichment, and research using Apollo.io, Relevance AI, and more. Includes a conversational agent for guided lead generation.
 
 ---
 
 ## 🛠 Prerequisites
 - [n8n](https://n8n.io) installed (self-hosted or cloud)
 - Google account (for Gmail/Sheets agents)
-- API keys for any external services used in the workflows (see workflow notes)
+- API keys for any external services used in the workflows (see each agent's README)
 
 ---
 
@@ -48,19 +50,16 @@ This repository provides a collection of powerful, ready-to-use AI agents design
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/dharmiksolanki/ai-agents.git
+   git clone https://github.com/rpyaduvanshi950/ai-automation-agents.git
    cd ai-agents
    ```
 2. **Open n8n** (locally or in the cloud)
 3. **Import the desired agent's `.json` file**
    - Go to n8n > Workflows > Import from File
    - Select the relevant `.json` file from the `agents/` subfolders
-4. **Configure credentials**
-   - Set up Gmail, Google Sheets, or any other required credentials in n8n
-   - Follow the notes inside each workflow for specific setup steps
-5. **(Optional) Add Sticky Notes**
-   - Copy the included Sticky Note text from the workflow and paste it into your n8n canvas for quick reference
-6. **Activate the workflow** and start automating!
+4. **Follow the agent-specific README**
+   - Each agent folder contains a `README.md` with detailed setup and usage instructions.
+5. **Activate the workflow** and start automating!
 
 ---
 
@@ -83,12 +82,15 @@ This repository provides a collection of powerful, ready-to-use AI agents design
 Contributions are welcome! To add a new agent or improve existing ones:
 1. Fork the repo
 2. Add your `.json` workflow in a new or existing agent folder
-3. Update this README with your agent details
-4. Open a pull request
+3. Add a `README.md` in your agent folder
+4. Update this main README with your agent details
+5. Open a pull request
 
 ---
 
 ## 📬 Contact & Tutorials
-- For questions, open an issue or contact [Dharmik Solanki](mailto:dharmiksolanki@gmail.com)
-- Subscribe on [YouTube](https://www.youtube.com/@debugging_dost) for step-by-step video guides!
+- For questions, open an issue or contact [puspender](mailto:puspender23@iitk.ac.com)
+- 
+
+BY Pushpender
 
